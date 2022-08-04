@@ -312,36 +312,39 @@ class Calendar
         $search  = [];
         $replace = [];
 
-        foreach (json_decode($json) as $key => $value) {
-            // Stripping double quotes from plugins values
-            if(strtolower($key) === 'plugins' || strtolower($key) === 'locales'){
-                if(is_array($value)) {
-                    foreach ($value as $key) {
-                        $search[] = '"' . $key . '"';
-                        $replace[] = $key;
+        if (json_decode($json)){
+
+            foreach (json_decode($json) as $key => $value) {
+                // Stripping double quotes from plugins values
+                if(strtolower($key) === 'plugins' || strtolower($key) === 'locales'){
+                    if(is_array($value)) {
+                        foreach ($value as $key) {
+                            $search[] = '"' . $key . '"';
+                            $replace[] = $key;
+                        }
+                    }
+                    else{
+                        $search[] = '"' . $value . '"';
+                        $replace[] = $value;
                     }
                 }
-                else{
-                    $search[] = '"' . $value . '"';
-                    $replace[] = $value;
-                }
-            }
 
-            // Stripping double quotes from custom button callback option
-            if(strtolower($key) === 'custombuttons'){
-                foreach ($value as $key => $value) { // buttons
-                    foreach ($value as $key => $value) { // buttons options
-                        if(strtolower($key) === 'click'){
-                            $search[]  = json_encode($value);
-                            $replace[] = '' . $value . '';
+                // Stripping double quotes from custom button callback option
+                if(strtolower($key) === 'custombuttons'){
+                    foreach ($value as $key => $value) { // buttons
+                        foreach ($value as $key => $value) { // buttons options
+                            if(strtolower($key) === 'click'){
+                                $search[]  = json_encode($value);
+                                $replace[] = '' . $value . '';
+                            }
                         }
                     }
                 }
             }
+            $json = str_replace($search, $replace, $json);
+
+            return preg_replace('/"(.+)":/i', '${1}:', $json);
         }
-        $json = str_replace($search, $replace, $json);
-
-        return preg_replace('/"(.+)":/i', '${1}:', $json);
-
+        return '';
     }
 }
