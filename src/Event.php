@@ -1,6 +1,6 @@
 <?php
 
-namespace Acaronlex\LaravelCalendar;
+namespace Edrisa\LaravelCalendar;
 
 use DateTime;
 

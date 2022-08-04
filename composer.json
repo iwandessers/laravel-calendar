@@ -24,10 +24,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Edrisa\\LaravelCalendar\\ServiceProvider"
+                "Acaronlex\\LaravelCalendar\\ServiceProvider"
             ],
             "aliases": {
-                "Calendar": "Edrisa\\LaravelCalendar\\Facades\\Calendar"
+                "Calendar": "Acaronlex\\LaravelCalendar\\Facades\\Calendar"
             }
         }
     },
