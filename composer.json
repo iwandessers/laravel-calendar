@@ -1,5 +1,5 @@
 {
-    "name": "acaronlex/laravel-calendar",
+    "name": "edrisa/laravel-calendar",
     "description": "Laravel helper for FullCalendar.io",
     "license": "MIT",
     "type": "package",
@@ -7,6 +7,9 @@
         {
             "name": "acaronlex",
             "email": "acaronlex@outlook.com"
+        }, {
+            "name": "Edrisa Turay",
+            "email": "edrisa@edrisa.com"
         }
     ],
     "require": {
@@ -15,16 +18,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Acaronlex\\LaravelCalendar\\": "src"
+            "Edrisa\\LaravelCalendar\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Acaronlex\\LaravelCalendar\\ServiceProvider"
+                "Edrisa\\LaravelCalendar\\ServiceProvider"
             ],
             "aliases": {
-                "Calendar": "Acaronlex\\LaravelCalendar\\Facades\\Calendar"
+                "Calendar": "Edrisa\\LaravelCalendar\\Facades\\Calendar"
             }
         }
     },

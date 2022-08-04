@@ -4,15 +4,17 @@ This is a simple helper package to make generating [http://fullcalendar.io](http
 
 Thanks to [@maddhatter](https://github.com/maddhatter) for the [initial repo](https://github.com/maddhatter/laravel-fullcalendar) for laravel < 7
 
+Thanks to [@acaronlex](https://github.com/acaronlex) for the [updated repo](https://github.com/acaronlex/laravel-calendar) for laravel 7 and 8
 ## Installing
 Require the package with composer using the following command:
 
-    composer require acaronlex/laravel-calendar
+    composer require edrisa/laravel-calendar
 
 The provider and `Calendar` alias will be registered automatically.
 
 You will also need to include [fullcalendar.io](http://fullcalendar.io/)'s files in your HTML.
 
+You can add it using the [jsdelivr](https://www.jsdelivr.com/package/npm/fullcalendar)
 ## Usage
 
 ### Creating Events
