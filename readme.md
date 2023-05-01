@@ -1,4 +1,4 @@
-# Laravel 7, 8 & 9 Full Calendar 5 Helper
+# Laravel 7, 8, 9 & 10 Full Calendar 5 Helper
 
 This is a simple helper package to make generating [http://fullcalendar.io](http://fullcalendar.io) in Laravel apps easier.
 
