@@ -11,7 +11,7 @@ Thanks to [@Spotawheel](https://github.com/Spotawheel) for the [updated repo](ht
 ## Installing
 Require the package with composer using the following command:
 
-    composer require iwan/laravel-calendar
+    composer require iwandessers/laravel-calendar
 
 The provider and `Calendar` alias will be registered automatically.
 
