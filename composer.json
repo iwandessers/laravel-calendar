@@ -1,5 +1,5 @@
 {
-    "name": "edrisa/laravel-calendar",
+    "name": "iwan/laravel-calendar",
     "description": "Laravel helper for FullCalendar.io",
     "license": "MIT",
     "type": "package",
@@ -10,6 +10,9 @@
         }, {
             "name": "Edrisa Turay",
             "email": "edrisa@edrisa.com"
+        }, {
+            "name": "Iwan Dessers",
+            "email": "iwandessers@gmail.com"
         }
     ],
     "require": {
@@ -18,16 +21,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Edrisa\\LaravelCalendar\\": "src"
+            "Iwan\\LaravelCalendar\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Edrisa\\LaravelCalendar\\ServiceProvider"
+                "Iwan\\LaravelCalendar\\ServiceProvider"
             ],
             "aliases": {
-                "Calendar": "Edrisa\\LaravelCalendar\\Facades\\Calendar"
+                "Calendar": "Iwan\\LaravelCalendar\\Facades\\Calendar"
             }
         }
     },

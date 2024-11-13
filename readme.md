@@ -8,7 +8,7 @@ Thanks to [@acaronlex](https://github.com/acaronlex) for the [updated repo](http
 ## Installing
 Require the package with composer using the following command:
 
-    composer require edrisa/laravel-calendar
+    composer require iwan/laravel-calendar
 
 The provider and `Calendar` alias will be registered automatically.
 
@@ -37,10 +37,10 @@ $event = \Calendar::event(
 ```
 #### Implementing `Event` Interface
 
-Alternatively, you can use an existing class and have it implement `Edrisa\LaravelCalendar\Event`. An example of an Eloquent model that implements the `Event` interface:
+Alternatively, you can use an existing class and have it implement `Iwan\LaravelCalendar\Event`. An example of an Eloquent model that implements the `Event` interface:
 
 ```php
-class EventModel extends Eloquent implements \Edrisa\LaravelCalendar\Event
+class EventModel extends Eloquent implements \Iwan\LaravelCalendar\Event
 {
 
     protected $dates = ['start', 'end'];
@@ -98,10 +98,10 @@ class EventModel extends Eloquent implements \Edrisa\LaravelCalendar\Event
 
 #### `IdentifiableEvent` Interface
 
-If you wish for your existing class to have event IDs, implement `\Edrisa\LaravelCalendar\IdentifiableEvent` instead. This interface extends `\Edrisa\LaravelCalendar\Event` to add a `getId()` method:
+If you wish for your existing class to have event IDs, implement `\Iwan\LaravelCalendar\IdentifiableEvent` instead. This interface extends `\Iwan\LaravelCalendar\Event` to add a `getId()` method:
 
 ```php
-class EventModel extends Eloquent implements \Edrisa\LaravelCalendar\IdentifiableEvent
+class EventModel extends Eloquent implements \Iwan\LaravelCalendar\IdentifiableEvent
 {
 
     // Implement all Event methods ...
@@ -144,7 +144,7 @@ $event = \Calendar::event(
 
 ```php
 <?php
-class CalendarEvent extends \Illuminate\Database\Eloquent\Model implements \Edrisa\LaravelCalendar\Event
+class CalendarEvent extends \Illuminate\Database\Eloquent\Model implements \Iwan\LaravelCalendar\Event
 {
     //...
 

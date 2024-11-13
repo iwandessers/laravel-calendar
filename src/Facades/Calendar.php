@@ -1,6 +1,6 @@
 <?php
 
-namespace Edrisa\LaravelCalendar\Facades;
+namespace Iwan\LaravelCalendar\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

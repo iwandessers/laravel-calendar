@@ -1,6 +1,6 @@
 <?php
 
-namespace Edrisa\LaravelCalendar;
+namespace Iwan\LaravelCalendar;
 
 use DateTime;
 
@@ -9,7 +9,7 @@ use DateTime;
  *
  * Simple DTO that implements the Event interface
  *
- * @package Edrisa\LaravelCalendar
+ * @package Iwan\LaravelCalendar
  */
 class SimpleEvent implements IdentifiableEvent
 {
