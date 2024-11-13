@@ -1,10 +1,13 @@
-# Laravel 7, 8, 9 & 10 Full Calendar 5 Helper
+# Laravel 11 Full Calendar
 
 This is a simple helper package to make generating [http://fullcalendar.io](http://fullcalendar.io) in Laravel apps easier.
 
 Thanks to [@maddhatter](https://github.com/maddhatter) for the [initial repo](https://github.com/maddhatter/laravel-fullcalendar) for laravel < 7
 
 Thanks to [@acaronlex](https://github.com/acaronlex) for the [updated repo](https://github.com/acaronlex/laravel-calendar) for laravel 7 and 8
+
+Thanks to [@Spotawheel](https://github.com/Spotawheel) for the [updated repo](https://github.com/Spotawheel/laravel-calendar) for laravel 9 and 10
+
 ## Installing
 Require the package with composer using the following command:
 
